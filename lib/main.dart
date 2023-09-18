@@ -1,8 +1,13 @@
+import 'package:coffee_shop/pages/Home_page/home_page.dart';
 import 'package:flutter/material.dart';
-
-import 'pages/welcome_page/welcome_page.dart';
+import 'package:flutter/services.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+    SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+    ),
+  );
   runApp(const MyApp());
 }
 
@@ -15,10 +20,10 @@ class MyApp extends StatelessWidget {
       title: "Coffee Shop",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.black,
+        scaffoldBackgroundColor: Color(0xff212325),
         fontFamily: 'Roboto',
       ),
-      home: WelcomePage(),
+      home: HomePage(),
     );
   }
 }
