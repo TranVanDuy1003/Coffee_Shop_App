@@ -1,4 +1,4 @@
-import 'package:coffee_shop/pages/Home_page/home_page.dart';
+import 'package:coffee_shop/pages/welcome_page/welcome_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Color(0xff212325),
         fontFamily: 'Roboto',
       ),
-      home: HomePage(),
+      home: WelcomePage(),
     );
   }
 }
