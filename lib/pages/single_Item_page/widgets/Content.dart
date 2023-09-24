@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../Model/drinks.dart';
 
 class Content extends StatelessWidget {
-  const Content({super.key});
-
+  Content({super.key});
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -22,7 +21,7 @@ class Content extends StatelessWidget {
         ),
         SizedBox(height: 20),
         Text(
-          Drinks[0].name,
+          Drinks[0].title,
           style: TextStyle(
             color: Colors.white,
             fontSize: 30,

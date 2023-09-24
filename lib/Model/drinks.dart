@@ -12,7 +12,7 @@ class Drink {
   });
 }
 
-List<Drink> Drinks = [
+final List<Drink> Drinks = [
   Drink(
     id: 1,
     name: 'Latte',
