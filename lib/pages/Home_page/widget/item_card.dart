@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../../single_Item_page/single_item_page.dart';
 
 class ItemCard extends StatelessWidget {
-  const ItemCard({super.key});
+  ItemCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,9 @@ class ItemCard extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => SingleItem(),
+                  builder: (context) => SingleItem(
+                    drink: Drinks[index],
+                  ),
                 ),
               );
             },

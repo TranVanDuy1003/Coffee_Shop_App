@@ -53,24 +53,4 @@ final List<Drink> Drinks = [
     desr:
         'A latte or caffè latte is a milk coffee that boasts a silky layer of foam as a real highlight to the drink',
   ),
-  Drink(
-    id: 4,
-    name: 'Cold Coffee',
-    title: 'Best Coffee',
-    image: 'assets/images/Cold Coffee.png',
-    price: 10,
-    volume: 60,
-    desr:
-        'A latte or caffè latte is a milk coffee that boasts a silky layer of foam as a real highlight to the drink',
-  ),
-  Drink(
-    id: 4,
-    name: 'Cold Coffee',
-    title: 'Best Coffee',
-    image: 'assets/images/Cold Coffee.png',
-    price: 10,
-    volume: 60,
-    desr:
-        'A latte or caffè latte is a milk coffee that boasts a silky layer of foam as a real highlight to the drink',
-  ),
 ];

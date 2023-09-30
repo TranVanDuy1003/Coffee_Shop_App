@@ -1,3 +1,4 @@
+import 'package:coffee_shop/Model/drinks.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/Content.dart';
@@ -6,7 +7,8 @@ import 'widgets/app_bar_widget.dart';
 import 'widgets/image.dart';
 
 class SingleItem extends StatelessWidget {
-  const SingleItem({super.key});
+  const SingleItem({super.key, required this.drink});
+  final Drink drink;
 
   @override
   Widget build(BuildContext context) {
@@ -25,9 +27,9 @@ class SingleItem extends StatelessWidget {
               children: [
                 AppBarWidget(),
                 SizedBox(height: 30),
-                Images(),
+                Images(drink: drink),
                 SizedBox(height: 20),
-                Content(),
+                Content(drink: drink),
                 SizedBox(height: 50),
                 AddToCart(),
               ],

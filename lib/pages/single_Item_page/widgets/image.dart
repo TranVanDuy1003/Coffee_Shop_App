@@ -5,13 +5,15 @@ import '../../../Model/drinks.dart';
 class Images extends StatelessWidget {
   const Images({
     super.key,
+    required this.drink,
   });
+  final Drink drink;
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Image.asset(
-        Drinks[0].image,
+        drink.image,
         fit: BoxFit.contain,
         width: MediaQuery.of(context).size.width * 1.2,
       ),
